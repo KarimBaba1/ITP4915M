@@ -1,0 +1,9 @@
+C:\Users\su\source\repos\LABORATORY2A\LABORATORY2A\bin\Debug\LABORATORY2A.exe.config
+C:\Users\su\source\repos\LABORATORY2A\LABORATORY2A\bin\Debug\LABORATORY2A.exe
+C:\Users\su\source\repos\LABORATORY2A\LABORATORY2A\bin\Debug\LABORATORY2A.pdb
+C:\Users\su\source\repos\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.lab2.frmLab2A.resources
+C:\Users\su\source\repos\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.Properties.Resources.resources
+C:\Users\su\source\repos\LABORATORY2A\LABORATORY2A\obj\Debug\SDP_Labs_2025.csproj.GenerateResource.cache
+C:\Users\su\source\repos\LABORATORY2A\LABORATORY2A\obj\Debug\SDP_Labs_2025.csproj.CoreCompileInputs.cache
+C:\Users\su\source\repos\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.exe
+C:\Users\su\source\repos\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.pdb
