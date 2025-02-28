@@ -58,10 +58,28 @@
     <Compile Include="lab2\frmLab2A.Designer.cs">
       <DependentUpon>frmLab2A.cs</DependentUpon>
     </Compile>
+    <Compile Include="lab2\frmLab2B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lab2\frmLab2B.Designer.cs">
+      <DependentUpon>frmLab2B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lab2\frmLab2C.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lab2\frmLab2C.Designer.cs">
+      <DependentUpon>frmLab2C.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="lab2\frmLab2A.resx">
       <DependentUpon>frmLab2A.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lab2\frmLab2B.resx">
+      <DependentUpon>frmLab2B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lab2\frmLab2C.resx">
+      <DependentUpon>frmLab2C.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
