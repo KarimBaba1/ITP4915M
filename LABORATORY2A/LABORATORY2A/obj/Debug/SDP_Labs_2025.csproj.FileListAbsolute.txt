@@ -19,3 +19,15 @@ C:\Users\su\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug
 C:\Users\su\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.exe
 C:\Users\su\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.pdb
 C:\Users\su\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.lab2.frmLab2C.resources
+C:\Users\MSI\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\bin\Debug\LABORATORY2A.exe.config
+C:\Users\MSI\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\bin\Debug\LABORATORY2A.exe
+C:\Users\MSI\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\bin\Debug\LABORATORY2A.pdb
+C:\Users\MSI\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\SDP_Labs_2025.csproj.AssemblyReference.cache
+C:\Users\MSI\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.lab2.frmLab2A.resources
+C:\Users\MSI\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.lab2.frmLab2B.resources
+C:\Users\MSI\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.lab2.frmLab2C.resources
+C:\Users\MSI\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.Properties.Resources.resources
+C:\Users\MSI\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\SDP_Labs_2025.csproj.GenerateResource.cache
+C:\Users\MSI\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\SDP_Labs_2025.csproj.CoreCompileInputs.cache
+C:\Users\MSI\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.exe
+C:\Users\MSI\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.pdb

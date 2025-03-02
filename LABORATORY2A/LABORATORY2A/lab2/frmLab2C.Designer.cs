@@ -38,56 +38,65 @@
             // lstStudents
             // 
             this.lstStudents.FormattingEnabled = true;
-            this.lstStudents.Location = new System.Drawing.Point(72, 37);
+            this.lstStudents.ItemHeight = 16;
+            this.lstStudents.Location = new System.Drawing.Point(96, 46);
+            this.lstStudents.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lstStudents.Name = "lstStudents";
-            this.lstStudents.Size = new System.Drawing.Size(191, 225);
+            this.lstStudents.Size = new System.Drawing.Size(253, 276);
             this.lstStudents.Sorted = true;
             this.lstStudents.TabIndex = 0;
+            this.lstStudents.DoubleClick += new System.EventHandler(this.lstStudents_DoubleClick);
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(456, 37);
+            this.textBox1.Location = new System.Drawing.Point(608, 46);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(255, 20);
+            this.textBox1.Size = new System.Drawing.Size(339, 22);
             this.textBox1.TabIndex = 1;
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(456, 76);
+            this.btnAdd.Location = new System.Drawing.Point(608, 94);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(100, 28);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Add an Item";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // lblMessage
             // 
             this.lblMessage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblMessage.Location = new System.Drawing.Point(72, 308);
+            this.lblMessage.Location = new System.Drawing.Point(96, 379);
+            this.lblMessage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(639, 106);
+            this.lblMessage.Size = new System.Drawing.Size(852, 130);
             this.lblMessage.TabIndex = 3;
             // 
             // lblDelete
             // 
             this.lblDelete.AutoSize = true;
             this.lblDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDelete.Location = new System.Drawing.Point(509, 249);
+            this.lblDelete.Location = new System.Drawing.Point(679, 306);
+            this.lblDelete.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDelete.Name = "lblDelete";
-            this.lblDelete.Size = new System.Drawing.Size(140, 13);
+            this.lblDelete.Size = new System.Drawing.Size(175, 17);
             this.lblDelete.TabIndex = 4;
             this.lblDelete.Text = "[Double click to delete]";
             // 
             // frmLab2C
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.lblDelete);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lstStudents);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmLab2C";
             this.Text = "frmLab2C";
             this.Load += new System.EventHandler(this.frmLab2C_Load);

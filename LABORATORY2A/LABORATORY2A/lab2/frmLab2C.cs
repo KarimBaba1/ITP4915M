@@ -27,7 +27,25 @@ namespace LABORATORY2A.lab2
         }
         private void lstStudents_DoubleClick(object sender, EventArgs e)
         {
+            if(lstStudents.SelectedItem != null)
+            {
+                
+                MessageBox.Show(lstStudents.SelectedItem.ToString());
+            }
             lstStudents.Items.Remove(lstStudents.SelectedItem);
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            if(!string.IsNullOrWhiteSpace(textBox1.Text))
+            {
+                lstStudents.Items.Add(textBox1.Text);
+                textBox1.Clear();
+            }
+            else
+            {
+                MessageBox.Show("Please enter a student name.");
+            }
         }
     }
 }
