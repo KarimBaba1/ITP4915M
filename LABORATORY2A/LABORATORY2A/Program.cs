@@ -17,7 +17,7 @@ namespace LABORATORY2A
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLab2C());
+            Application.Run(new frmMenu());
         }
     }
 }

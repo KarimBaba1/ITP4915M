@@ -52,6 +52,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="lab2\frmLab2A.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,8 +76,29 @@
     <Compile Include="lab2\frmLab2C.Designer.cs">
       <DependentUpon>frmLab2C.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lab3\frmLab3a.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab3\frmLab3a.Designer.cs">
+      <DependentUpon>frmLab3a.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab3\frmLab3B.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab3\frmLab3B.Designer.cs">
+      <DependentUpon>frmLab3B.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lab3\frmLab3C.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab3\frmLab3C.Designer.cs">
+      <DependentUpon>frmLab3C.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="lab2\frmLab2A.resx">
       <DependentUpon>frmLab2A.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +107,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="lab2\frmLab2C.resx">
       <DependentUpon>frmLab2C.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab3\frmLab3a.resx">
+      <DependentUpon>frmLab3a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab3\frmLab3B.resx">
+      <DependentUpon>frmLab3B.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab3\frmLab3C.resx">
+      <DependentUpon>frmLab3C.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -103,5 +139,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

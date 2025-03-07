@@ -31,3 +31,7 @@ C:\Users\MSI\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debu
 C:\Users\MSI\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\SDP_Labs_2025.csproj.CoreCompileInputs.cache
 C:\Users\MSI\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.exe
 C:\Users\MSI\source\repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.pdb
+C:\Users\su\Source\Repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.frmMenu.resources
+C:\Users\su\Source\Repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.Lab3.frmLab3a.resources
+C:\Users\su\Source\Repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.Lab3.frmLab3B.resources
+C:\Users\su\Source\Repos\KarimBaba1\ITP4915M\LABORATORY2A\LABORATORY2A\obj\Debug\LABORATORY2A.Lab3.frmLab3C.resources
