@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LABORATORY2A.Lab1;
 using LABORATORY2A.lab2;
 using LABORATORY2A.Lab3;
 
@@ -34,6 +35,10 @@ namespace LABORATORY2A
         {
             switch(cboLabs.SelectedItem.ToString())
             {
+                case "Lab1":
+                    frmLab01 lab1 = new frmLab01();
+                    lab1.Show();
+                    break;
                 case "Lab2A":
                     frmLab2A lab2A = new frmLab2A();
                     lab2A.Show();

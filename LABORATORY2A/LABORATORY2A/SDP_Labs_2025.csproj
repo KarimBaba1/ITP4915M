@@ -58,6 +58,12 @@
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lab1\frmLab01.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lab1\frmLab01.Designer.cs">
+      <DependentUpon>frmLab01.cs</DependentUpon>
+    </Compile>
     <Compile Include="lab2\frmLab2A.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lab1\frmLab01.resx">
+      <DependentUpon>frmLab01.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="lab2\frmLab2A.resx">
       <DependentUpon>frmLab2A.cs</DependentUpon>
