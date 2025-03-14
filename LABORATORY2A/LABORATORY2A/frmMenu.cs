@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using LABORATORY2A.Lab1;
 using LABORATORY2A.lab2;
 using LABORATORY2A.Lab3;
-
+using LABORATORY2A.Lab4;
 namespace LABORATORY2A
 {
     public partial class frmMenu : Form
@@ -29,6 +29,7 @@ namespace LABORATORY2A
             cboLabs.Items.Add("Lab3A");
             cboLabs.Items.Add("Lab3B");
             cboLabs.Items.Add("Lab3C");
+            cboLabs.Items.Add("Lab4");
         }
 
         private void btnOpen_Click(object sender, EventArgs e)
@@ -62,6 +63,10 @@ namespace LABORATORY2A
                 case "Lab3C":
                     frmLab3C Lab3C = new frmLab3C();
                     Lab3C.Show();
+                    break;
+                case "Lab4":
+                    frmLab4 Lab4 = new frmLab4();
+                    Lab4.Show();
                     break;
             }
                 }

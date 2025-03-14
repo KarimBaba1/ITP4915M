@@ -24,16 +24,49 @@ namespace LABORATORY2A.Lab3
 
         private void btnAddToCart_Click(object sender, EventArgs e)
         {
-            String cart = lstShop.SelectedItem.ToString();
-            lstCart.Items.Add(cart);
-            lstShop.Items.Remove(cart);
+            if (lstShop.SelectedItem == null)
+            {
+                MessageBox.Show("Please select an item to add");
+                return;
+            }
+            else {
+                String cart = lstShop.SelectedItem.ToString();
+
+                if (selectAll.Checked)
+                {
+                    for (int i = 0; i < lstShop.Items.Count; i++)
+                    {
+                        String AllItems = lstShop.Items[i].ToString();
+                        lstCart.Items.Add(AllItems);
+
+                    }
+                    lstShop.Items.Clear();
+
+                }
+                else
+                {
+                    lstCart.Items.Add(cart);
+                    lstShop.Items.Remove(cart);
+                }
+            }
+
+
+
         }
 
         private void btnRemoveFromCart_Click(object sender, EventArgs e)
         {
-            String cart = lstCart.SelectedItem.ToString();
-            lstShop.Items.Add(cart);
-            lstCart.Items.Remove(cart);
+            if(lstCart.SelectedItem == null)
+            {
+                MessageBox.Show("Please select an item to remove");
+            }
+            else
+            {
+                String cart = lstCart.SelectedItem.ToString();
+                lstShop.Items.Add(cart);
+                lstCart.Items.Remove(cart);
+            }
+            
         }
 
         private void btnAddFruit_Click(object sender, EventArgs e)
@@ -57,18 +90,46 @@ namespace LABORATORY2A.Lab3
         {
             String[] fruits = new String[lstCart.Items.Count];
             lstCart.Items.CopyTo(fruits, 0);
-            foreach(String fruit in fruits)
+            foreach (String fruit in fruits)
             {
                 lstShop.Items.Add(fruit);
 
             }
 
             lstCart.Items.Clear();
+        }
+
+ 
+        private void selectAll_CheckedChanged(object sender, EventArgs e)
+        {
+            if(selectAll.Checked)
+            {
+                selectAllItems(lstShop);
+            }
+            else
+            {
+                deselectAllItems(lstShop);
+            }
+
+        }
+        private void selectAllItems(ListBox listBox)
+        {
+            for (int i = 0; i < listBox.Items.Count; i++)
+            {
+                listBox.SetSelected(i, true);
             }
         }
- 
-           
-        
-            
+        private void deselectAllItems(ListBox listBox)
+        {
+            for (int i = 0; i < listBox.Items.Count; i++)
+            {
+                listBox.SetSelected(i, false);
+            }
+        }
     }
+
+
+
+
+}
 

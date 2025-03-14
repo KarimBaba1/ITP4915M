@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.33927.289
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDP_Labs_2025", "LABORATORY2A\SDP_Labs_2025.csproj", "{B2B84437-B47F-496C-AEBF-A9806CA58D83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDP_WebAPI", "SDP_WebAPI\SDP_WebAPI.csproj", "{AFCA3EFB-503D-4AE3-8E9E-B8EF94E2654A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B2B84437-B47F-496C-AEBF-A9806CA58D83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2B84437-B47F-496C-AEBF-A9806CA58D83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B2B84437-B47F-496C-AEBF-A9806CA58D83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFCA3EFB-503D-4AE3-8E9E-B8EF94E2654A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFCA3EFB-503D-4AE3-8E9E-B8EF94E2654A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFCA3EFB-503D-4AE3-8E9E-B8EF94E2654A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFCA3EFB-503D-4AE3-8E9E-B8EF94E2654A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
