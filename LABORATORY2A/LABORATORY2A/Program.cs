@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using LABORATORY2A.lab2;
 using LABORATORY2A.Lab4;
+using LABORATORY2A.Lab5;
 
 namespace LABORATORY2A
 {

@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using System.Data;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using DatabaseAccessController;
+using Newtonsoft.Json;
 
 namespace SDP_WebAPI.Controllers
 {
@@ -7,10 +10,31 @@ namespace SDP_WebAPI.Controllers
     [ApiController]
     public class SimpleGetAPIController : ControllerBase
     {
+        private readonly IConfiguration _configuration;
+
+        public SimpleGetAPIController(IConfiguration configuration)
+        {
+            _configuration = configuration;
+        }
+
         [HttpGet("SimpleGetMethod")]
             public String Get()
         {
             return $"This is returned by the web API server. Current time is : {DateTime.Now}";
         }
+
+        [HttpGet("GetCustomerData")]
+        public String GetCustomerData()
+        {
+            dboGetCompanyData dboGetCompanyData = new dboGetCompanyData(_configuration["ConnectionStrings"]);
+            DataTable dtResult = dboGetCompanyData.GetAllCustomerData();
+
+            // Convert DataTable to JSON string
+            string jsonString = JsonConvert.SerializeObject(dtResult);
+
+            // Return JSON string
+            return jsonString;
+        }
+
     }
 }
