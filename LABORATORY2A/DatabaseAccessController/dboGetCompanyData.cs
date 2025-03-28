@@ -1,24 +1,55 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using System.Data;
+﻿using System.Data;
+using Microsoft.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace DatabaseAccessController
 {
-    public class dboGetCompanyData : dboDatabaseController
+    public class dboGetCompanyData
     {
-        public dboGetCompanyData(string connectionString) : base(connectionString)
+        private readonly string _connectionString;
+
+        public dboGetCompanyData(string connectionString)
         {
+            _connectionString = connectionString;
         }
 
         public DataTable GetAllCustomerData()
         {
-            String sqlCmd = "SELECT * FROM customers";
-            return GetData(sqlCmd);
+            DataTable dataTable = new DataTable();
+
+            using (MySqlConnection connection = new MySqlConnection(_connectionString))
+            {
+                string query = "SELECT * FROM Customers";
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
+                    {
+                        adapter.Fill(dataTable);
+                    }
+                }
+            }
+
+            return dataTable;
         }
 
+        public DataTable FindCustomerData(string customerName)
+        {
+            DataTable dataTable = new DataTable();
+
+            using (MySqlConnection connection = new MySqlConnection(_connectionString))
+            {
+                string query = $"SELECT * FROM customers WHERE customerName LIKE CONCAT('%',  @customerName, '%')";
+                using (MySqlCommand command = new MySqlCommand(query, connection))
+                {
+                    command.Parameters.AddWithValue("@customerName", customerName);
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(command))
+                    {
+                        adapter.Fill(dataTable);
+                    }
+                }
+            }
+
+            return dataTable;
+        }
     }
 }

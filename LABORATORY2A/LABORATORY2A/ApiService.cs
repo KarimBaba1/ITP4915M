@@ -3,19 +3,48 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net.Http;
+using System.Configuration;
+using System.Data;
+using Newtonsoft.Json;
+using System.Windows.Forms;
 
 namespace LABORATORY2A
 {
     public class ApiService
     {
-        _client = new HttpClient();
+        public async Task<string> APIRequest(string endpoint)
         {
-        baseAddress = new Uri(ConfrationManager.AppSettings["ServerAddress"])
-            };
+            try
+            {
+                using (HttpClient client = new HttpClient())
+                {
+                    client.BaseAddress = new Uri(ConfigurationManager.AppSettings["ServerAddress"]);
+                    HttpResponseMessage response = await client.GetAsync(endpoint);
+                    if (response.IsSuccessStatusCode)
+                    {
+                        return await response.Content.ReadAsStringAsync();
+                    }
+                    else
+                    {
+                        string error = $"Error: {response.StatusCode} - {response.ReasonPhrase}";
+                        MessageBox.Show(error);
+                        throw new Exception(error);
+                    }
+                }
+            }
+            catch (HttpRequestException e)
+            {
+                MessageBox.Show($"Request error: {e.Message}");
+                throw;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Unexpected error: {ex.Message}");
+                throw;
+            }
+        }
+
     }
-public async Task<string> GetRawStringAsync(string endpoint)
-{
-   var response =await _client.GetAsync(endpoint);
-    response.EnsureSuccessStatusCode();
-    return await response.Content.ReadAsStringAsync();
 }
+

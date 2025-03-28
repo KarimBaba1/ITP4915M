@@ -18,7 +18,7 @@ namespace SDP_WebAPI.Controllers
         }
 
         [HttpGet("SimpleGetMethod")]
-            public String Get()
+        public String Get()
         {
             return $"This is returned by the web API server. Current time is : {DateTime.Now}";
         }
@@ -36,5 +36,17 @@ namespace SDP_WebAPI.Controllers
             return jsonString;
         }
 
+        [HttpGet("FindCustomer")]
+        public String FindCustomerData(String CustomerName)
+        {
+            dboGetCompanyData dboGetCompanyData = new dboGetCompanyData(_configuration["ConnectionStrings"]);
+            DataTable dtResult = dboGetCompanyData.FindCustomerData(CustomerName);
+
+            // Convert DataTable to JSON string
+            string jsonString = JsonConvert.SerializeObject(dtResult);
+
+            // Return JSON string
+            return jsonString;
+        }
     }
 }
