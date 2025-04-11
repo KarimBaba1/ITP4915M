@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DatabaseAccessController\DatabaseAccessController.csproj" />
+    <ProjectReference Include="..\SDP_EntityModels\SDP_EntityModels.csproj" />
   </ItemGroup>
 
 </Project>

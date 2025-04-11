@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDP_WebAPI", "SDP_WebAPI\SD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseAccessController", "DatabaseAccessController\DatabaseAccessController.csproj", "{0A597575-3ADC-4786-9DA8-E1876BE20CB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDP_EntityModels", "SDP_EntityModels\SDP_EntityModels.csproj", "{BF25545E-4AF5-4D89-80EC-954D028AA970}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0A597575-3ADC-4786-9DA8-E1876BE20CB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A597575-3ADC-4786-9DA8-E1876BE20CB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A597575-3ADC-4786-9DA8-E1876BE20CB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF25545E-4AF5-4D89-80EC-954D028AA970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF25545E-4AF5-4D89-80EC-954D028AA970}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF25545E-4AF5-4D89-80EC-954D028AA970}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF25545E-4AF5-4D89-80EC-954D028AA970}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

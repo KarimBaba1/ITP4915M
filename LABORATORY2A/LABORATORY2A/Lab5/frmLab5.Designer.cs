@@ -33,6 +33,7 @@
             txt_Customer_Name = new System.Windows.Forms.TextBox();
             btn_search = new System.Windows.Forms.Button();
             lbl_customerName = new System.Windows.Forms.Label();
+            btnUpdate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)dgvCustomerDetails).BeginInit();
             SuspendLayout();
             // 
@@ -81,11 +82,22 @@
             lbl_customerName.TabIndex = 4;
             lbl_customerName.Text = "Customer Name";
             // 
+            // btnUpdate
+            // 
+            btnUpdate.Location = new System.Drawing.Point(584, 380);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new System.Drawing.Size(75, 23);
+            btnUpdate.TabIndex = 5;
+            btnUpdate.Text = "Update";
+            btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
+            // 
             // frmLab5
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(800, 450);
+            Controls.Add(btnUpdate);
             Controls.Add(lbl_customerName);
             Controls.Add(btn_search);
             Controls.Add(txt_Customer_Name);
@@ -106,5 +118,6 @@
         private System.Windows.Forms.TextBox txt_Customer_Name;
         private System.Windows.Forms.Button btn_search;
         private System.Windows.Forms.Label lbl_customerName;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }
